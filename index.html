@@ -5,21 +5,180 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="/vite.svg"
+      href=""
     />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Portfolio</title>
+    <title>Enikeev Tair - Portfolio</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div
+      id="wrapper"
+      data-scroll-container
+    >
+      <div class="app">
+        <div class="main-wrap">
+          <!--  -->
+          <header
+            class="header"
+            id="header"
+          >
+            <!--  -->
+            <div
+              class="navbar"
+              id="navbar"
+            >
+              <div class="navbar__content">
+                <div class="navbar__left">
+                  <ul class="navbar__left-menu menu">
+                    <li
+                      class="menu__item"
+                      id="menu-about"
+                    >
+                      <span> About me </span>
+                    </li>
+                    <li
+                      class="menu__item"
+                      id="menu-works"
+                    >
+                      <span> Works</span>
+                    </li>
+                    <li
+                      class="menu__item"
+                      id="menu-contact"
+                    >
+                      <span> Contact</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navbar__right">
+                  <span class="navbar__right-logo"> Portfolio </span>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+
+            <div class="personal">
+              <div class="personal__picture">
+                <img
+                  class="personal__picture-image"
+                  src="/public/img/me.png"
+                  alt="image"
+                />
+              </div>
+            </div>
+
+            <div class="information">
+              <div class="information__box">
+                <div class="information__text">
+                  Web Developer
+                  <div class="information__text-br"></div>
+                  Photo and Video Editor
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="big-name"
+              id="big-name"
+            >
+              <div
+                class="name"
+                id="name"
+                data-scroll
+                data-scroll-speed="1"
+                data-scroll-direction="horizontal"
+              >
+                <div class="name-item">Enikeev Tair -&nbsp;</div>
+                <div class="name-item">Еникеев Таир</div>
+              </div>
+            </div>
+          </header>
+          <!--  -->
+
+          <section
+            class="section about"
+            id="about"
+          >
+            <div class="about">
+              <div class="about__body">
+                <div class="about__title">
+                  <mark class="about__title-mark">I am a Web Developer</mark>
+                  who is responsible for construction of websites. I ensure that
+                  sites meet user expectations by ensuring they look good, run
+                  smoothly and offer easy access points with no loading issues
+                  between pages or error messages.
+                </div>
+
+                <div class="about__line">
+                  <div class="about__line-animation"></div>
+                </div>
+
+                <div class="skills">
+                  <div class="skills__title">
+                    <span> My Skils </span>
+                  </div>
+
+                  <div class="skills__box">
+                    <div class="skills__left">
+                      <!-- skills block -->
+                      <div class="skills__block">
+                        <div class="skills__block-category">
+                          <div class="skills__block-img">
+                            <img
+                              src="./public/img/montage.png"
+                              alt=""
+                            />
+                          </div>
+                          <span> Photo and Video </span>
+                        </div>
+                        <div class="skills__block-skils">
+                          <!--  -->
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="skills__right">
+                      <div class="skills__block">
+                        <div class="skills__block-category">
+                          <div class="skills__block-img">
+                            <img
+                              src="./public/img/development.png"
+                              alt=""
+                            />
+                          </div>
+                          <span> Web Technologies </span>
+                        </div>
+                        <div class="skills__block-skils">
+                          <!--  -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="section works"
+            id="works"
+          >
+            <div class="works">My past projects</div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://dennissnellenberg.com/assets/js/locomotive-scroll.min.js"></script>
     <script
       type="module"
       src="/src/main.ts"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   </body>
 </html>

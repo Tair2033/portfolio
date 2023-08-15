@@ -23,4 +23,4 @@ function initLoader() {
   tl.set('.', {});
 }
 
-// initLoader();
+initLoader();

@@ -11,3 +11,4 @@ menuItems.forEach((item: HTMLElement, index: number) => {
     // console.log((e.target as HTMLElement).getBoundingClientRect());
   });
 });
+

@@ -124,7 +124,7 @@
 
   &__item:nth-child(7) {
     flex-direction: row-reverse;
-    top: 150px;
+    top: 240px;
     right: -125px;
     font-weight: 600;
   }
@@ -138,6 +138,18 @@
     top: 383px;
     right: 190px;
     flex-direction: column-reverse;
+  }
+
+  &__item:nth-child(10) {
+    flex-direction: row-reverse;
+    top: 140px;
+    right: -135px;
+  }
+
+  &__item:nth-child(11) {
+    flex-direction: row-reverse;
+    top: 275px;
+    right: -50px;
   }
 
   &__item-text {

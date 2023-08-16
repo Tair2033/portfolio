@@ -12,9 +12,17 @@
 <body>
   <div id="wrapper" data-scroll-container>
     <div class="app">
+      <div class="btn btn-hamburger">
+        <div class="hamburger-inside" id="hamburger">
+          <div class="hamburger-symbol" id="hamburger-symbol">
+            &#9776;
+          </div>
+        </div>
+      </div>
       <div class="main-wrap">
         <!--  -->
-        <header class="header" id="header">
+        <header class="header" id="header" data-scroll-section data-scroll-section-id="section0"
+          data-scroll-section-inview>
           <!--  -->
           <div class="navbar" id="navbar">
             <div class="navbar__content">
@@ -39,7 +47,7 @@
           <!--  -->
 
           <div class="personal">
-            <div class="personal__picture">
+            <div class="personal__picture" data-scroll data-scroll-speed="-0.5" data-scroll-position="top">
               <img class="personal__picture-image" src="/public/img/me.png" alt="image" />
             </div>
           </div>
@@ -55,7 +63,7 @@
           </div>
 
           <div class="big-name" id="big-name">
-            <div class="name" id="name" data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">
+            <div class="name" id="name" data-scroll data-scroll-speed="0.4">
               <div class="name-item">Enikeev Tair -&nbsp;</div>
               <div class="name-item">Еникеев Таир</div>
             </div>
@@ -74,62 +82,114 @@
                 between pages or error messages.
               </div>
 
-              <div class="about__line">
+              <div class="about__line" id="about__line">
                 <div class="about__line-animation"></div>
               </div>
 
               <div class="skills">
-                <div class="skills__title">
-                  <span> My Skils </span>
-                </div>
-
-                <div class="skills__box">
-                  <div class="skills__left">
-                    <div class="skills__block">
-                      <div class="skills__block-category">
-                        <div class="skills__block-img">
-                          <img src="./public/img/development.png" alt="" />
-                        </div>
-                        <span> Web Technologies </span>
-                      </div>
-                      <div class="skills__block-skils">
-                        <!--  -->
-                      </div>
-                    </div>
+                <div class="skills__inside">
+                  <div class="skills__title">
+                    FrontEnd <br />
+                    Developer <br />
+                    Skills
                   </div>
 
-                  <div class="skills__right">
-                    <!-- skills block -->
-                    <div class="skills__block">
-                      <div class="skills__block-category">
-                        <div class="skills__block-img">
-                          <img src="./public/img/framework.png" alt="" />
-                        </div>
-                        <span> JS Frameworks </span>
+                  <div class="skills_items">
+                    <div class="skills__item">
+                      <div class="skills__item-text">
+                        JavaScript
                       </div>
-                      <div class="skills__block-skils abilities">
-                        <ul class="abilities__content">
-                          <li class="abilities__item">
-                            <div class="abilities__item-icon">
-                              <i class="fa-brands fa-react"></i>
-                            </div>
-                            <div class="abilities__item-text">React</div>
-                          </li>
+                      <div class="skills__item-circle">
+                        <div class="circle-inside"></div>
+                      </div>
+                    </div>
 
-                          <li class="abilities__item">
-                            <div class="abilities__item-icon">
-                              <i class="fa-brands fa-vuejs"></i>
-                            </div>
-                            <div class="abilities__item-text">Vue</div>
-                          </li>
-                        </ul>
+                    <div class="skills__item">
+                      <div class="skills__item-text">
+                        TypeScript
+                      </div>
+                      <div class="skills__item-circle">
+                        <div class="circle-inside"></div>
+                      </div>
+                    </div>
+
+                    <div class="skills__item">
+                      <div class="skills__item-text">
+                        HTML5 / CSS3
+                      </div>
+                      <div class="skills__item-circle">
+                        <div class="circle-inside"></div>
+                      </div>
+                    </div>
+
+                    <div class="skills__item">
+                      <div class="skills__item-text">
+                        Prepocessors <br />(SASS / SCSS)
+                      </div>
+                      <div class="skills__item-circle">
+                        <div class="circle-inside"></div>
+                      </div>
+                    </div>
+
+                    <div class="skills__item">
+                      <div class="skills__item-text">
+                        Bootstrap / Material UI
+                      </div>
+                      <div class="skills__item-circle">
+                        <div class="circle-inside"></div>
+                      </div>
+                    </div>
+
+                    <div class="skills__item">
+                      <div class="skills__item-icon">
+                        <img src="https://www.svgrepo.com/show/452092/react.svg" alt="react">
+                      </div>
+                      <div class="skills__item-text">
+                        React Js
+                      </div>
+                      <div class="skills__item-circle">
+                        <div class="circle-inside"></div>
+                      </div>
+                    </div>
+
+                    <div class="skills__item">
+                      <div class="skills__item-icon">
+                        <svg class="logo" viewBox="0 0 128 128" width="24" height="24" data-v-c0161dce="">
+                          <path fill="#42b883" d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z"
+                            data-v-c0161dce=""></path>
+                          <path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z" data-v-c0161dce="">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="skills__item-text">
+                        Vue Js
+                      </div>
+                      <div class="skills__item-circle">
+                        <div class="circle-inside"></div>
+                      </div>
+                    </div>
+
+                    <div class="skills__item">
+                      <div class="skills__item-text">
+                        Webpack
+                      </div>
+                      <div class="skills__item-circle">
+                        <div class="circle-inside"></div>
+                      </div>
+                    </div>
+
+                    <div class="skills__item">
+                      <div class="skills__item-text">
+                        Gulp / Vite
+                      </div>
+                      <div class="skills__item-circle">
+                        <div class="circle-inside"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         <section class="section works" id="works">

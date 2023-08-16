@@ -1,5 +1,6 @@
 import './style.css';
 import './Sections/Header/header';
+import './Sections/About/about';
 import { gsap } from 'gsap';
 import LocomotiveScroll from 'locomotive-scroll';
 
@@ -17,10 +18,3 @@ new LocomotiveScroll({
 //   end: '+=900',
 //   markers: true
 // });
-
-function initLoader() {
-  var tl = gsap.timeline();
-  tl.set('.', {});
-}
-
-initLoader();

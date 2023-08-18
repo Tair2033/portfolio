@@ -3,7 +3,12 @@
 @import url('./Sections/Header/_header.scss');
 @import url('./Sections/About/_about.scss');
 @import url('./Sections/Works/_works.scss');
+@import url('./Sections/Subjects/_subjects.scss');
 @import url('./Sections/Footer/_footer.scss');
+
+:root {
+  --container-padding: clamp(2.5em, 8vw, 8em);
+}
 
 * {
   margin: 0;
@@ -54,4 +59,12 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+  max-width: 100em;
 }

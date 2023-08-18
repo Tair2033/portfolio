@@ -117,7 +117,8 @@ header {
   &__text {
     z-index: 5;
     position: relative;
-    font-size: 35px;
+    // font-size: 35px;
+    font-size: clamp(1.55em, 2.3vw, 2.5em);
     text-align: center;
   }
 

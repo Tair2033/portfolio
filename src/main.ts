@@ -1,6 +1,7 @@
 import './style.css';
 import './Sections/Header/header';
 import './Sections/About/about';
+import './Sections/Works/works';
 import { gsap } from 'gsap';
 import LocomotiveScroll from 'locomotive-scroll';
 

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div id="wrapper" data-scroll-container>
+  <div id="wrapper">
     <div class="app">
       <div class="btn btn-hamburger">
         <div class="hamburger-inside" id="hamburger">
@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <div class="main-wrap">
+      <div class="main-wrap" data-scroll-container>
         <!--  -->
         <header class="header" id="header" data-scroll-section data-scroll-section-id="section0"
           data-scroll-section-inview>
@@ -71,7 +71,7 @@
         </header>
         <!--  -->
 
-        <section class="section about" id="about">
+        <section class="section about" id="about" data-scroll-section>
           <div class="about">
             <div class="about__body">
               <div class="about__title">
@@ -82,8 +82,9 @@
                 between pages or error messages.
               </div>
 
-              <div class="about__line" id="about__line">
-                <div class="about__line-animation"></div>
+              <div class="about__line line" id="about__line">
+                <div class="about__line-animation line-animation">
+                </div>
               </div>
 
               <div class="skills">
@@ -210,8 +211,111 @@
             </div>
         </section>
 
-        <section class="section works" id="works">
-          <div class="works">My past projects</div>
+        <section class="section works" id="works" data-scroll-section>
+          <div class="container">
+            <div class="works__content">
+              <div class="works__title">My past projects</div>
+
+              <div class="works__line line"></div>
+
+              <div class="works__recent">
+
+                <!-- <div class="works__preview preview" id="preview">
+                  <div class="preview__box">
+                    <div class="preview__image">
+                      <img src="/img/site.jpg" alt="">
+                    </div>
+                  </div>
+                </div> -->
+
+                <ul class="works__box">
+                  <li class="works__recent-item work">
+                    <a href="https://github.com/Tair2033/blogging-platform" class="work__link">
+                      <div class="work__title">Blogging platform</div>
+                      <div class="work__tecnology">
+                        <div class="work__tecnology-name">Vue</div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <div class="works__line line"></div>
+
+                  <li class="works__recent-item work">
+                    <a href="#" class="work__link">
+                      <div class="work__title">Library</div>
+                      <div class="work__tecnology">
+                        <div class="work__tecnology-name">Vue</div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <div class="works__line line"></div>
+
+                  <li class="works__recent-item work">
+                    <a href="#" class="work__link">
+                      <div class="work__title">Something</div>
+                      <div class="work__tecnology">
+                        <div class="work__tecnology-name">React</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section subjects" id="subjects" data-scroll-section data-scroll-section-id="section2"
+          data-scroll-section-inview>
+          <div class="subjects__container">
+            <div class="subjects__content">
+              <div class="subjects__title">
+                More works
+              </div>
+
+              <div class="subjects__works">
+                <div class="subjects__row row is-inview" data-scroll data-scroll-speed="0.45">
+                  <div class="flex-col">
+                    <a href="#">
+                      <div class="horizontal-single-item">
+                        <div class="overlay playpauze">
+                          <video class="overlay lazy entered loaded"
+                            src="https://dennissnellenberg.com/assets/img/home-item-5.mp4" loop muted playsinline
+                            data-ll-status="loaded" autoplay></video>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="flex-col">
+                    <a href="#">
+                      <div class="horizontal-single-item">
+                        <div class="overlay playpauze">
+                          <video class="overlay lazy entered loaded"
+                            src="https://dennissnellenberg.com/assets/img/home-item-7.mp4" loop muted playsinline
+                            data-ll-status="loaded" autoplay></video>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="flex-col">
+                    <a href="#">
+                      <div class="horizontal-single-item">
+                        <div class="overlay playpauze">
+                          <video class="overlay lazy entered loaded"
+                            src="https://dennissnellenberg.com/assets/img/home-item-5.mp4" loop muted playsinline
+                            data-ll-status="loaded" autoplay></video>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section contact" id="contact" data-scroll-section>
+
         </section>
       </div>
     </div>
@@ -219,7 +323,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
   <script src="https://dennissnellenberg.com/assets/js/locomotive-scroll.min.js"></script>
   <script type="module" src="/src/main.ts"></script>
 </body>

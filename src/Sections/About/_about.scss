@@ -7,6 +7,7 @@
 
 .about {
   padding: 15px;
+  padding-bottom: 90px;
 
   &__body {
     display: flex;
@@ -46,6 +47,8 @@
     background-color: rgb(181, 207, 255);
     top: -50px;
     right: 50px;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -102,17 +105,17 @@
 
   &__item:nth-child(3) {
     top: 130px;
-    left: -130px;
+    left: -140px;
   }
 
   &__item:nth-child(4) {
     top: 180px;
-    left: -140px;
+    left: -150px;
   }
 
   &__item:nth-child(5) {
     top: 270px;
-    left: -190px;
+    left: -200px;
   }
 
   &__item:nth-child(6) {

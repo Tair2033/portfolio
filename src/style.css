@@ -20,6 +20,12 @@ body {
   overflow-x: hidden;
   font-family: 'Rubik', sans-serif;
   background-color: #1c1d20;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .app {
@@ -38,6 +44,7 @@ body {
 }
 
 .hamburger-inside {
+  opacity: 0;
   cursor: pointer;
   width: 0;
   height: 0;
@@ -47,6 +54,7 @@ body {
 }
 
 .hamburger-symbol {
+  opacity: 0;
   visibility: hidden;
   display: flex;
   justify-content: center;
@@ -67,4 +75,37 @@ body {
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
   max-width: 100em;
+}
+
+.black-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  overflow: hidden;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.black-background span {
+  color: white;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+.black-inside {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  will-change: top;
 }

@@ -1,5 +1,4 @@
 .about {
-  min-height: 1000px;
   color: white;
   font-family: 'Poppins', sans-serif;
   padding-top: 40px;
@@ -8,7 +7,6 @@
 .about {
   padding: 15px;
   padding-bottom: 90px;
-
   &__body {
     display: flex;
     flex-direction: column;
@@ -52,14 +50,22 @@
   }
 }
 
+.about-skills-title {
+  font-size: 40px;
+  margin-left: 13%;
+  margin-top: 50px;
+  cursor: default;
+}
+
 .skills {
   cursor: default;
   position: relative;
-  margin-top: 160px;
+  margin-top: 80px;
   color: rgb(42, 42, 255);
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 450px;
 
   &__inside {
     position: absolute;
@@ -76,7 +82,9 @@
   &__title {
     filter: brightness(150%);
     position: absolute;
-    top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 40px;
     font-weight: 600;
     text-align: center;

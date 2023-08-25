@@ -14,7 +14,7 @@ ScrollTrigger.create({
     gsap.to('#hamburger-symbol', {
       opacity: 1,
       visibility: 'visible',
-      fontSize: '40px'
+      fontSize: '41px'
     });
   }
 });

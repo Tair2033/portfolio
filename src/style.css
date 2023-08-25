@@ -43,6 +43,9 @@ body::-webkit-scrollbar {
   position: fixed;
 }
 
+.btn-hamburger:hover {
+}
+
 .hamburger-inside {
   opacity: 0;
   cursor: pointer;
@@ -108,4 +111,79 @@ body::-webkit-scrollbar {
   height: 100%;
   left: 0;
   will-change: top;
+}
+
+.top-btn div {
+  font-size: calc(15px + 1.7vw);
+  font-weight: 600;
+}
+
+.top-btn {
+  color: rgb(136, 89, 2);
+  list-style: none;
+  transition: all 0.3s;
+  text-decoration: underline;
+  text-decoration-color: rgba(17, 16, 22, 0);
+}
+
+.top-btn:hover {
+  color: orange;
+  text-decoration-color: orange;
+}
+
+.sidebar-wrapper {
+  display: none;
+  position: fixed;
+  width: 30%;
+  height: 100vh;
+  right: 0;
+  background-color: rgba(17, 16, 22, 0.873);
+  z-index: 20;
+}
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar__menu {
+  position: absolute;
+  transform: translateY(50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar__menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  color: white;
+  transition: all 0.4s;
+}
+
+.sidebar__menu-item:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.leftmenu__text {
+  width: 100%;
+  height: 100%;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 1vw);
+  cursor: pointer;
+}
+
+#sidebar {
+  transition: all 0.4s;
+}
+
+.sidebar-hide {
+  transform: translateX(100%);
 }

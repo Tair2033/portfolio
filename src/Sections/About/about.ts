@@ -26,13 +26,13 @@ ScrollTrigger.create({
     gsap.fromTo(
       '.about__title',
       {
-        y: 40,
+        y: 60,
         opacity: 0
       },
       {
         y: 0,
         opacity: 1,
-        duration: 1
+        duration: 1.4
       }
     );
   }
@@ -58,7 +58,7 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: '.about-skills-title',
-  start: 'top bottom',
+  start: 'bottom',
   once: true,
   onToggle: () => {
     gsap.fromTo(
@@ -78,6 +78,7 @@ let tl = gsap.timeline();
 
 ScrollTrigger.create({
   trigger: '.about-skills-title',
+  start: 'bottom bottom',
   once: true,
   onEnter: () => {
     tl.fromTo(

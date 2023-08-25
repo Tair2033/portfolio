@@ -21,13 +21,32 @@
 
   <main>
     <div id="wrapper">
-      <div class=" app">
+      <div class="app">
 
-        <div class="btn btn-hamburger">
+        <div class="btn btn-hamburger" id="btn-hamburger">
           <div class="hamburger-inside" id="hamburger">
             <div class="hamburger-symbol" id="hamburger-symbol">
               &#9776;
             </div>
+          </div>
+        </div>
+
+        <div class="sidebar-wrapper sidebar-hide" id="sidebar">
+          <div class="sidebar">
+            <ul class="sidebar__menu" id="sidebar__menu">
+              <li class="sidebar__menu-item leftmenu">
+                <div class="leftmenu__text">About</div>
+              </li>
+              <li class="sidebar__menu-item leftmenu">
+                <div class="leftmenu__text">Works</div>
+              </li>
+              <li class="sidebar__menu-item leftmenu">
+                <div class="leftmenu__text">Contact</div>
+              </li>
+              <li class="top-btn">
+                <div class="leftmenu__text">To the TOP &uarr;</div>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -39,9 +58,9 @@
             <div class="navbar" id="navbar">
               <div class="navbar__content">
                 <div class="navbar__left">
-                  <ul class="navbar__left-menu menu">
+                  <ul class="navbar__left-menu menu" id="navbar__left-menu">
                     <li class="menu__item" id="menu-about">
-                      <span> About me </span>
+                      <span> About</span>
                     </li>
                     <li class="menu__item" id="menu-works">
                       <span> Works</span>
@@ -60,8 +79,9 @@
 
             <div class="personal">
               <div class="personal__picture" data-scroll data-scroll-speed="-0.5" data-scroll-position="top">
-                <img class="personal__picture-image"
-                  src="https://github.com/Tair2033/portfolio/blob/main/public/img/me.png?raw=true" alt="image" />
+                <img class="personal__picture-image" loading="lazy"
+                  src="https://lh3.googleusercontent.com/pw/AIL4fc_WJj2R-M0XtRlBLBLp1umyiAL2jtGBUxXEnrVV_-9D49TD6vNZYxYysf9hT4b3WxHqtmIako4Sg5tGjQ-b2rw3qQWlsg_SVwZPtnFjdcLcDHZ25kzI7mjP3clDk67vFl-b7PwU9hRdfzXP1vfx87TOGivfYNFghZEX9kvrfL_OuGmlSeKkp9kk8Ps7FgyE1dIdmc5E_8BtAPPeka6lhOqnEGbeC5T3qu-fojGneY6GMjOPH67vAyNjznyx6QOGmRrUF-nqaADW1jpQ3I1YTujLwmgb2JwM1FI5_z57wZQvFK4vu_YZL0Zu1DotNgejdFuCooXHJYub3fVbyaabCbCjpgWyMuJ_A4Wd5Kek3aX5BslCPzAxw1BgpgjWXOMgZYimPLFYWLJr1sZkKlivPXQWlYSN6GGD7sysLaI4UM3N65sddjVWN1OZQ2kub6XXN26TqepYoxjtrvQpyAqgzR6zLhPKCKwyDqrgQmbivsZnXQZbLowr_XZy_vUTO-SGApGSNuVYU_WHdynwpXZOC2BZz9ur2JW6vsy2YlSDrqc7K52SM8dgE9PeJsB5goKFnIP7fon0B26Lz2AandpXzr4ReahWnW-Sy1AWh545hHlWBrF-IrVvHqwRQod2J2Sypit0084o_8Kya176m_nykdkEfORG6cmdEru0k6kfCq_m9_6JUYPcHF_bD5o19rO750JuaVgtvh_nOd-xGqwqx6rqn89kgnvmiXdf9LV79lqk7TykurNOobEawk7JvqOdyNZZHXesK6TsujwFoZSIrGQW75v7UG-tmU51DxnSxI1gQqCfIcSwaRofm8ReUEjSkWVIDmoiWRycFrSx4lDyfQ5z3SBlXjXqKXHuurDa3sxeF_uj_E_AzCgVbFH2TB6D--8SvjAyPpfl_6BRaYNoKhJAziRbCSg_qT1z5xaY5K_NxbvrHM69-vYxFEUQ=w386-h648-s-no?authuser=1"
+                  alt="image" />
               </div>
             </div>
 
@@ -74,7 +94,8 @@
                 </div>
                 <a href="https://github.com/Tair2033" style="margin-top: 10px;" class="social-link social-link--github"
                   id="github">
-                  <svg class="social-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="social-svg" width="4.8rem" height="4.8rem" viewBox="0 0 600 600"
+                    xmlns="http://www.w3.org/2000/svg">
                     <title>
                       github
                     </title>
@@ -175,7 +196,7 @@
 
                       <div class="skills__item" id="skills__item-6">
                         <div class="skills__item-icon">
-                          <img src="https://www.svgrepo.com/show/452092/react.svg" alt="react">
+                          <img width="30px" src="https://www.svgrepo.com/show/452092/react.svg" alt="react">
                         </div>
                         <div class="skills__item-text">
                           React Js

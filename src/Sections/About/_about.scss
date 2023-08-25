@@ -16,7 +16,7 @@
   &__title {
     cursor: default;
     padding-top: 40px;
-    font-size: 30px;
+    font-size: calc(15px + 1.2 * 1.4vw);
     margin: 0 180px;
     text-align: center;
     padding-bottom: 50px;

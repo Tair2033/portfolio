@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <title>Enikeev Tair - Portfolio</title>
-  <script type="module" crossorigin src="/portfolio/assets/index-eaec86cb.js"></script>
-  <link rel="stylesheet" href="/portfolio/assets/index-cfb149a7.css">
+  <script type="module" crossorigin src="/portfolio/assets/index-dd8c426c.js"></script>
+  <link rel="stylesheet" href="/portfolio/assets/index-95e3c722.css">
 </head>
 
 <body data-barba="wrapper">
@@ -23,13 +23,32 @@
 
   <main>
     <div id="wrapper">
-      <div class=" app">
+      <div class="app">
 
-        <div class="btn btn-hamburger">
+        <div class="btn btn-hamburger" id="btn-hamburger">
           <div class="hamburger-inside" id="hamburger">
             <div class="hamburger-symbol" id="hamburger-symbol">
               &#9776;
             </div>
+          </div>
+        </div>
+
+        <div class="sidebar-wrapper sidebar-hide" id="sidebar">
+          <div class="sidebar">
+            <ul class="sidebar__menu" id="sidebar__menu">
+              <li class="sidebar__menu-item leftmenu">
+                <div class="leftmenu__text">About</div>
+              </li>
+              <li class="sidebar__menu-item leftmenu">
+                <div class="leftmenu__text">Works</div>
+              </li>
+              <li class="sidebar__menu-item leftmenu">
+                <div class="leftmenu__text">Contact</div>
+              </li>
+              <li class="top-btn">
+                <div class="leftmenu__text">To the TOP &uarr;</div>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -41,9 +60,9 @@
             <div class="navbar" id="navbar">
               <div class="navbar__content">
                 <div class="navbar__left">
-                  <ul class="navbar__left-menu menu">
+                  <ul class="navbar__left-menu menu" id="navbar__left-menu">
                     <li class="menu__item" id="menu-about">
-                      <span> About me </span>
+                      <span> About</span>
                     </li>
                     <li class="menu__item" id="menu-works">
                       <span> Works</span>
@@ -62,8 +81,10 @@
 
             <div class="personal">
               <div class="personal__picture" data-scroll data-scroll-speed="-0.5" data-scroll-position="top">
-                <img class="personal__picture-image"
-                  src="https://github.com/Tair2033/portfolio/blob/main/public/img/me.png?raw=true" alt="image" />
+                <img class="personal__picture-image" loading="lazy"
+                  src="https://raw.githubusercontent.com/Tair2033/portfolio/main/dist/img/me.png" alt="image" />
+                <img class="personal__expl"
+                  src="https://github.com/Tair2033/portfolio/blob/main/dist/img/bg-explosion.png?raw=true" alt="">
               </div>
             </div>
 
@@ -76,7 +97,8 @@
                 </div>
                 <a href="https://github.com/Tair2033" style="margin-top: 10px;" class="social-link social-link--github"
                   id="github">
-                  <svg class="social-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="social-svg" width="4.8rem" height="4.8rem" viewBox="0 0 600 600"
+                    xmlns="http://www.w3.org/2000/svg">
                     <title>
                       github
                     </title>
@@ -115,6 +137,24 @@
 
                 <div class="about__line line" id="about__line">
                   <div class="about__line-animation line-animation">
+                    <div class="moon">
+                      <div class="crater crater1"></div>
+                      <div class="crater crater2"></div>
+                      <div class="crater crater3"></div>
+                      <div class="crater crater4"></div>
+                      <div class="crater crater5"></div>
+                      <div class="shadow"></div>
+                      <div class="eye eye-l"></div>
+                      <div class="eye eye-r"></div>
+                      <div class="mouth"></div>
+                      <div class="blush blush1"></div>
+                      <div class="blush blush2"></div>
+                    </div>
+                    <div class="orbit">
+                      <div class="rocket">
+                        <div class="window"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -177,7 +217,7 @@
 
                       <div class="skills__item" id="skills__item-6">
                         <div class="skills__item-icon">
-                          <img src="https://www.svgrepo.com/show/452092/react.svg" alt="react">
+                          <img width="30px" src="https://www.svgrepo.com/show/452092/react.svg" alt="react">
                         </div>
                         <div class="skills__item-text">
                           React Js
@@ -247,7 +287,7 @@
           </section>
 
           <section class="section works" id="works" data-scroll-section>
-            <div class="container">
+            <div class="works__container">
               <div class="works__content">
                 <div class="works__title">My past projects</div>
 

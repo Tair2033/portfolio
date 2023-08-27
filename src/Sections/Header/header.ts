@@ -3,37 +3,16 @@ import { gsap } from 'gsap';
 export const tl = gsap.timeline();
 const navbar = document.getElementById('navbar__left-menu') as HTMLElement;
 
-navbar.addEventListener('mouseenter', (e) => {
-  const element = e.target as HTMLElement;
-  gsap.fromTo(
-    `#${element.id}`,
-    {
-      x: 0,
-      y: 0
-    },
-    {
-      x: 10,
-      y: 20
-    }
-  );
-  if (element.tagName === 'LI') {
+gsap.fromTo(
+  '.personal__expl',
+  {
+    opacity: 0.2
+  },
+  {
+    opacity: 1,
+    duration: 1
   }
-});
-
-navbar.addEventListener('mouseleave', (e) => {
-  const element = e.target as HTMLElement;
-  gsap.fromTo(
-    `#${element.id}`,
-    {
-      x: 10,
-      y: 20
-    },
-    {
-      x: 0,
-      y: 0
-    }
-  );
-});
+);
 
 tl.fromTo(
   '#menu-about',
@@ -81,6 +60,7 @@ tl.fromTo(
     },
     {
       opacity: 1,
+      delay: 0.35,
       duration: 1
     },
     0.5
@@ -89,22 +69,25 @@ tl.fromTo(
 gsap.fromTo(
   '.information__text',
   {
-    y: 20,
+    y: 50,
     opacity: 0
   },
   {
     y: 0,
     opacity: 1,
-    duration: 0.7
+    delay: 0.35,
+    duration: 1
   }
 );
 
 gsap.fromTo(
   '.big-name',
   {
-    opacity: 0
+    opacity: 0,
+    delay: 0.35
   },
   {
+    delay: 0.35,
     opacity: 1,
     duration: 1
   }
@@ -119,6 +102,7 @@ gsap.fromTo(
   {
     y: 0,
     opacity: 1,
-    duration: 0.9
+    delay: 0.35,
+    duration: 1
   }
 );

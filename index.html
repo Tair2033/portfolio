@@ -9,7 +9,7 @@
   <title>Enikeev Tair - Portfolio</title>
 </head>
 
-<body data-barba="wrapper">
+<body class="body_hide">
 
 
   <div class="black-background" id="black-background">
@@ -79,9 +79,11 @@
 
             <div class="personal">
               <div class="personal__picture" data-scroll data-scroll-speed="-0.5" data-scroll-position="top">
-                <img class="personal__picture-image" loading="lazy"
-                  src="https://lh3.googleusercontent.com/pw/AIL4fc_WJj2R-M0XtRlBLBLp1umyiAL2jtGBUxXEnrVV_-9D49TD6vNZYxYysf9hT4b3WxHqtmIako4Sg5tGjQ-b2rw3qQWlsg_SVwZPtnFjdcLcDHZ25kzI7mjP3clDk67vFl-b7PwU9hRdfzXP1vfx87TOGivfYNFghZEX9kvrfL_OuGmlSeKkp9kk8Ps7FgyE1dIdmc5E_8BtAPPeka6lhOqnEGbeC5T3qu-fojGneY6GMjOPH67vAyNjznyx6QOGmRrUF-nqaADW1jpQ3I1YTujLwmgb2JwM1FI5_z57wZQvFK4vu_YZL0Zu1DotNgejdFuCooXHJYub3fVbyaabCbCjpgWyMuJ_A4Wd5Kek3aX5BslCPzAxw1BgpgjWXOMgZYimPLFYWLJr1sZkKlivPXQWlYSN6GGD7sysLaI4UM3N65sddjVWN1OZQ2kub6XXN26TqepYoxjtrvQpyAqgzR6zLhPKCKwyDqrgQmbivsZnXQZbLowr_XZy_vUTO-SGApGSNuVYU_WHdynwpXZOC2BZz9ur2JW6vsy2YlSDrqc7K52SM8dgE9PeJsB5goKFnIP7fon0B26Lz2AandpXzr4ReahWnW-Sy1AWh545hHlWBrF-IrVvHqwRQod2J2Sypit0084o_8Kya176m_nykdkEfORG6cmdEru0k6kfCq_m9_6JUYPcHF_bD5o19rO750JuaVgtvh_nOd-xGqwqx6rqn89kgnvmiXdf9LV79lqk7TykurNOobEawk7JvqOdyNZZHXesK6TsujwFoZSIrGQW75v7UG-tmU51DxnSxI1gQqCfIcSwaRofm8ReUEjSkWVIDmoiWRycFrSx4lDyfQ5z3SBlXjXqKXHuurDa3sxeF_uj_E_AzCgVbFH2TB6D--8SvjAyPpfl_6BRaYNoKhJAziRbCSg_qT1z5xaY5K_NxbvrHM69-vYxFEUQ=w386-h648-s-no?authuser=1"
-                  alt="image" />
+                <img class="personal__picture-image" height="100" width="100" loading="eager" decoding="sync"
+                  src="https://raw.githubusercontent.com/Tair2033/portfolio/main/dist/img/me.png" alt="image" />
+                <img class="personal__expl" loading="eager"
+                  src="https://github.com/Tair2033/portfolio/blob/main/dist/img/bg-explosion.png?raw=true"
+                  decoding="sync" height="100" width="100" alt="">
               </div>
             </div>
 
@@ -114,8 +116,7 @@
 
             <div class="big-name" id="big-name">
               <div class="name" id="name" data-scroll data-scroll-speed="0.4">
-                <div class="name-item">Enikeev Tair -&nbsp;</div>
-                <div class="name-item">Еникеев Таир</div>
+                <div class="name-item">Enikeev Tair - Еникеев Таир</div>
               </div>
             </div>
           </header>
@@ -134,6 +135,24 @@
 
                 <div class="about__line line" id="about__line">
                   <div class="about__line-animation line-animation">
+                    <div class="moon">
+                      <div class="crater crater1"></div>
+                      <div class="crater crater2"></div>
+                      <div class="crater crater3"></div>
+                      <div class="crater crater4"></div>
+                      <div class="crater crater5"></div>
+                      <div class="shadow"></div>
+                      <div class="eye eye-l"></div>
+                      <div class="eye eye-r"></div>
+                      <div class="mouth"></div>
+                      <div class="blush blush1"></div>
+                      <div class="blush blush2"></div>
+                    </div>
+                    <div class="orbit">
+                      <div class="rocket">
+                        <div class="window"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -187,7 +206,7 @@
 
                       <div class="skills__item" id="skills__item-5">
                         <div class="skills__item-text">
-                          Bootstrap / Material UI
+                          Bootstrap <br /> Material UI
                         </div>
                         <div class="skills__item-circle">
                           <div class="circle-inside"></div>
@@ -266,7 +285,7 @@
           </section>
 
           <section class="section works" id="works" data-scroll-section>
-            <div class="container">
+            <div class="works__container">
               <div class="works__content">
                 <div class="works__title">My past projects</div>
 
@@ -306,6 +325,10 @@
                       </a>
                     </li>
                   </ul>
+
+                  <div class="subjects__title">
+                    More works
+                  </div>
                 </div>
               </div>
             </div>
@@ -315,9 +338,6 @@
             data-scroll-section-id="section2" data-scroll-section-inview>
             <div class="subjects__container">
               <div class="subjects__content">
-                <div class="subjects__title">
-                  More works
-                </div>
 
                 <div class="subjects__works">
                   <div class="subjects__row row is-inview" data-scroll data-scroll-speed="0.45">

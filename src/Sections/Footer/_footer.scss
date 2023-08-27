@@ -4,7 +4,7 @@ $color-primary-dark: #4f92ac;
 
 $color-white: #fffbfa;
 
-$color-black: #0c0c0c;
+$color-black: #737272;
 
 .contact {
   min-height: 100vh;
@@ -24,20 +24,20 @@ $color-black: #0c0c0c;
   }
   &__content-top {
     color: white;
-    font-size: 20px;
+    font-size: clamp(1.4em, 1.5vw, 2.3em);
     margin-bottom: 10px;
     text-decoration: underline;
   }
   &__content-title {
     color: white;
-    font-size: 50px;
+    font-size: clamp(2em, 1.5vw, 2.3em);
     margin-bottom: 15px;
   }
   &__content-email span {
     cursor: pointer;
     display: block;
     color: white;
-    font-size: 23px;
+    font-size: clamp(1.2em, 1.5vw, 2.3em);
     text-decoration: solid;
     margin-bottom: 15px;
     margin-left: 15px;
@@ -54,11 +54,12 @@ $color-black: #0c0c0c;
     justify-content: center;
     align-items: center;
   }
-
-  &__socials {
-  }
   &__socials-item {
     margin-top: 40px;
+  }
+
+  &__socals-item a {
+    font-size: clamp(1.9em, 1.8vw, 2.3em);
   }
 }
 
@@ -71,18 +72,15 @@ $color-black: #0c0c0c;
   border-top: 1px solid white;
   height: 50px;
   &__content {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 0 calc(30px + 1vw);
   }
   &__text {
     cursor: default;
     text-align: center;
     color: white;
-    font-size: 17px;
+    margin-top: calc(10px + 0.5vw);
+    font-size: clamp(1.2em, 1.2vw, 1.6em);
   }
-}
-
-.social-link {
 }
 
 .social-link-text {
@@ -175,8 +173,8 @@ $color-black: #0c0c0c;
   }
 
   & .social-svg {
-    width: 4.8rem;
-    height: 4.8rem;
+    width: calc(25px + 2 * 2.5vw);
+    height: calc(25px + 2 * 2.5vw);
 
     & .social-group {
       &__icon {
@@ -221,5 +219,17 @@ $color-black: #0c0c0c;
         }
       }
     }
+  }
+}
+
+//
+
+@media (max-width: 800px) {
+  .footer__text {
+    font-size: calc(12px + 0.5vw);
+  }
+
+  .footer__content {
+    padding: 0;
   }
 }

@@ -4,6 +4,19 @@ ScrollTrigger.create({
   trigger: '#about__line',
   start: 'top bottom',
   end: 'bottom top',
+  onLeaveBack: () => {
+    gsap.to('#hamburger', {
+      opacity: 0,
+      width: '0',
+      height: '0'
+    });
+
+    gsap.to('#hamburger-symbol', {
+      opacity: 0,
+      visibility: 'hidden',
+      fontSize: '0'
+    });
+  },
   onToggle: () => {
     gsap.to('#hamburger', {
       opacity: 1,
@@ -46,10 +59,12 @@ ScrollTrigger.create({
     gsap.fromTo(
       '.about__line-animation',
       {
-        x: -900
+        x: -1000,
+        filter: 'brightness(100%)'
       },
       {
         x: 0,
+        filter: 'brightness(200%)',
         duration: 2
       }
     );

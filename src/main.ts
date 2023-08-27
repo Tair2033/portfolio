@@ -18,8 +18,6 @@ export const navbar = document.getElementById(
 const hamburger = document.getElementById('btn-hamburger');
 const sidebarMenu = document.getElementById('sidebar__menu');
 
-footerText.textContent = `@ ${new Date().getFullYear()} Enikeev Tair`;
-
 hamburger?.addEventListener('click', () => {
   sidebar.classList.toggle('sidebar-hide');
 });
@@ -89,4 +87,39 @@ new LocomotiveScroll({
   smooth: true
 });
 
-ScrollToPlugin;
+setTimeout(function () {
+  document.body.classList.add('body_visible');
+}, 350);
+
+footerText.textContent = `@ ${new Date().getFullYear()} Enikeev Tair`;
+
+window.addEventListener('DOMContentLoaded', checkWindowSize);
+window.addEventListener('resize', checkWindowSize);
+
+function checkWindowSize() {
+  if (window.innerWidth <= 650) {
+    gsap.to('#hamburger', {
+      opacity: 1,
+      width: 'clamp(4em, 5.5vw, 5em)',
+      height: 'clamp(4em, 5.5vw, 5em)'
+    });
+
+    gsap.to('#hamburger-symbol', {
+      opacity: 1,
+      visibility: 'visible',
+      fontSize: '41px'
+    });
+  } else {
+    gsap.to('#hamburger', {
+      opacity: 0,
+      width: '0',
+      height: '0'
+    });
+
+    gsap.to('#hamburger-symbol', {
+      opacity: 0,
+      visibility: 'hidden',
+      fontSize: '0'
+    });
+  }
+}

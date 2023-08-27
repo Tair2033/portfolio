@@ -41,9 +41,12 @@ body::-webkit-scrollbar {
   right: 40px;
   z-index: 50;
   position: fixed;
+  opacity: 0.65;
+  transition: all 0.6s;
 }
 
 .btn-hamburger:hover {
+  opacity: 1.1;
 }
 
 .hamburger-inside {
@@ -73,11 +76,9 @@ body::-webkit-scrollbar {
 }
 
 .container {
-  max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 calc(100px + 1.32vw);
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
-  max-width: 100em;
 }
 
 .black-background {
@@ -144,11 +145,12 @@ body::-webkit-scrollbar {
 .sidebar {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .sidebar__menu {
   position: absolute;
-  transform: translateY(50%);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -176,7 +178,8 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(15px + 1vw);
+  padding: calc(10px + 1.5vw) 0;
+  font-size: calc(20px + 1.1vw);
   cursor: pointer;
 }
 
@@ -186,4 +189,18 @@ body::-webkit-scrollbar {
 
 .sidebar-hide {
   transform: translateX(100%);
+}
+
+.body_hide {
+  opacity: 0;
+}
+.body_visible {
+  transition: 0.9s opacity ease-in-out;
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .sidebar-wrapper {
+    width: 40%;
+  }
 }

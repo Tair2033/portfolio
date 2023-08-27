@@ -14,14 +14,16 @@
   }
 
   &__title {
-    cursor: default;
+    cursor: pointer;
     text-align: center;
-    font-size: 20px;
+    font-size: calc(15px + 0.6vw);
     color: rgba(46, 45, 45, 0.833);
     margin-bottom: 70px;
+    margin-top: 20px;
   }
 
-  &__works {
+  &__title:hover {
+    color: blue;
   }
 
   &__row {
@@ -82,11 +84,12 @@
 .hover-title {
   color: white;
   margin-bottom: 20px;
+  font-size: calc(20px + 0.8vw);
 }
 
 .hover-link {
-  width: 50px;
-  height: 50px;
+  width: calc(40px + 2vw);
+  height: calc(40px + 2vw);
   border-radius: 50%;
   background-color: rgba(33, 33, 249, 0.887);
   display: flex;
@@ -97,7 +100,7 @@
 
 .hover-link a {
   color: white;
-  font-size: 16px;
+  font-size: calc(20px + 0.6vw);
   text-decoration: none;
 }
 
@@ -116,5 +119,18 @@
 .flex-col:hover {
   .hover-work {
     opacity: 1;
+  }
+}
+
+// adaptive
+
+@media (max-width: 800px) {
+  .subjects__row {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .flex-col {
+    width: 60%;
   }
 }

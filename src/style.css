@@ -37,8 +37,8 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 40px;
-  right: 40px;
+  top: 20px;
+  right: 24px;
   z-index: 50;
   position: fixed;
   opacity: 0.65;
@@ -60,13 +60,13 @@ body::-webkit-scrollbar {
 }
 
 .hamburger-symbol {
-  opacity: 0;
+  height: 100%;
+  width: 100%;
   visibility: hidden;
+  font-size: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0px;
-  margin-top: 6px;
 }
 
 .main-wrap {
@@ -195,7 +195,7 @@ body::-webkit-scrollbar {
   opacity: 0;
 }
 .body_visible {
-  transition: 0.9s opacity ease-in-out;
+  transition: 1.2s opacity ease-in-out;
   opacity: 1;
 }
 

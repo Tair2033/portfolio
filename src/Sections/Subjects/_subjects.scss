@@ -40,7 +40,7 @@
   display: block;
   order: 2;
   position: relative;
-  width: 35%;
+  width: 40%;
   padding: calc(var(--gap-padding) / 2);
   padding: 1.25vw;
   will-change: transform;
@@ -64,7 +64,13 @@
   object-fit: cover;
 }
 
+.overlay {
+  padding: 10px;
+}
+
 .hover-work {
+  height: 80%;
+  width: 100%;
   cursor: pointer;
   z-index: 30;
   position: absolute;
@@ -88,24 +94,24 @@
 }
 
 .hover-link {
-  width: calc(40px + 2vw);
-  height: calc(40px + 2vw);
+  width: calc(45px + 2.1vw);
+  height: calc(45px + 2.1vw);
   border-radius: 50%;
   background-color: rgba(33, 33, 249, 0.887);
+  color: rgb(180, 180, 180);
+  font-size: calc(20px + 0.6vw);
+  opacity: 0.4;
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10%;
+  transition: all 0.4s;
 }
 
-.hover-link a {
-  color: white;
-  font-size: calc(20px + 0.6vw);
-  text-decoration: none;
-}
-
-.hover-link a:hover .hover-link {
-  background-color: rgba(67, 67, 253, 0.887);
+.hover-link:hover {
+  color: rgb(255, 255, 255);
+  opacity: 1;
 }
 
 .video {

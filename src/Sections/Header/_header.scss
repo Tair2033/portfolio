@@ -1,6 +1,5 @@
 header {
-  // background-color: #999d9e;
-  background-color: white;
+  background-color: black;
   min-height: 100vh;
   color: white;
   position: relative;
@@ -60,7 +59,6 @@ header {
   }
 
   &__item span {
-    // font-size: clamp(2.3vw, 1.5vw, 2.3em);
     font-size: calc(10px + 0.7vw);
     text-shadow: -6px 2px 9px rgba(0, 0, 0, 0.265);
     width: 100%;
@@ -109,7 +107,6 @@ header {
     position: absolute;
     right: 10%;
     z-index: 50;
-    // transform: translateX(-50%);
   }
 
   &__picture-image img {
@@ -141,7 +138,7 @@ header {
     position: relative;
     // font-size: clamp(2em, 3vw, 7em);
     font-size: calc(20px + 1.6vw);
-    text-shadow: -6px 2px 9px rgba(0, 0, 0, 0.265);
+    text-shadow: -6px 2px 9px rgba(0, 0, 0, 0.647);
     text-align: center;
   }
 
@@ -172,7 +169,7 @@ header {
     white-space: nowrap;
     margin: 0 50px;
     font-size: calc(7vw);
-    text-shadow: -6px 2px 9px rgba(0, 0, 0, 0.265);
+    text-shadow: -6px 2px 9px rgba(0, 0, 0, 0.706);
   }
 }
 
@@ -199,7 +196,7 @@ header {
   .personal__picture-image {
     object-fit: cover;
     height: 90%;
-    left: -50px;
+    left: -20px;
   }
 
   .information__box {

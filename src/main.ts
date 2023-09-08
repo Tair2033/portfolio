@@ -100,14 +100,14 @@ function checkWindowSize() {
   if (window.innerWidth <= 650) {
     gsap.to('#hamburger', {
       opacity: 1,
-      width: 'clamp(4em, 5.5vw, 5em)',
-      height: 'clamp(4em, 5.5vw, 5em)'
+      width: 'clamp(4em, 4vw, 8em)',
+      height: 'clamp(4em, 4vw, 8em)'
     });
 
     gsap.to('#hamburger-symbol', {
       opacity: 1,
       visibility: 'visible',
-      fontSize: '41px'
+      fontSize: 'clamp(2.5em, 3.5vw, 8em)'
     });
   } else {
     gsap.to('#hamburger', {

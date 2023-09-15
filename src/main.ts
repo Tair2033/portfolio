@@ -6,120 +6,34 @@ import './Sections/Footer/footer';
 import { gsap } from 'gsap';
 import LocomotiveScroll from 'locomotive-scroll';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import { Animation } from './animation.ts';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 ScrollTrigger.normalizeScroll(true);
-
-const footerText = document.getElementById('footer__text') as HTMLElement;
-const sidebar = document.getElementById('sidebar') as HTMLElement;
-export const navbar = document.getElementById(
-  'navbar__left-menu'
-) as HTMLElement;
-const hamburger = document.getElementById('btn-hamburger');
-const sidebarMenu = document.getElementById('sidebar__menu');
-
-hamburger?.addEventListener('click', () => {
-  sidebar.classList.toggle('sidebar-hide');
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  sidebar.style.display = 'block';
-});
-
-sidebarMenu?.addEventListener('click', (e) => {
-  const element = e.target as HTMLElement;
-
-  if (element.tagName === 'DIV') {
-    switch (element.textContent) {
-      case 'To the TOP ↑':
-        goTo('#header');
-        break;
-      case 'About': {
-        goTo('#about');
-        break;
-      }
-      case 'Works': {
-        goTo('#works');
-        break;
-      }
-      case 'Contact': {
-        goTo('#contact');
-        break;
-      }
-      default: {
-        console.log(element.textContent);
-        break;
-      }
-    }
-  }
-});
-
-navbar?.addEventListener('click', (e) => {
-  const element = e.target as HTMLElement;
-
-  if (element) {
-    switch (element.textContent?.trim()) {
-      case 'About': {
-        goTo('#about');
-        break;
-      }
-      case 'Works': {
-        goTo('#works');
-        break;
-      }
-      case 'Contact': {
-        goTo('#contact');
-        break;
-      }
-      default: {
-        break;
-      }
-    }
-  }
-});
-
-function goTo(id: string = '') {
-  gsap.to(window, { duration: 1.5, scrollTo: id });
-  sidebar.classList.add('sidebar-hide');
-}
-
 new LocomotiveScroll({
   smooth: true
 });
 
+const animation = new Animation();
+
+animation.$hamburger?.addEventListener('click', () => {
+  animation.$sidebar.classList.toggle('sidebar-hide');
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  animation.$sidebar.style.display = 'block';
+});
+
+animation.$navbar.addEventListener('click', (e) => {
+  animation.navbarMenuAction(e);
+});
+
+animation.$sidebar.addEventListener('click', (e) => {
+  animation.sidebarAction(e);
+});
+
+animation.$footerText.textContent = `@ ${new Date().getFullYear()} Enikeev Tair`;
+
 setTimeout(function () {
   document.body.classList.add('body_visible');
 }, 350);
-
-footerText.textContent = `@ ${new Date().getFullYear()} Enikeev Tair`;
-
-window.addEventListener('DOMContentLoaded', checkWindowSize);
-window.addEventListener('resize', checkWindowSize);
-
-function checkWindowSize() {
-  if (window.innerWidth <= 650) {
-    gsap.to('#hamburger', {
-      opacity: 1,
-      width: 'clamp(4em, 4vw, 8em)',
-      height: 'clamp(4em, 4vw, 8em)'
-    });
-
-    gsap.to('#hamburger-symbol', {
-      opacity: 1,
-      visibility: 'visible',
-      fontSize: 'clamp(2.5em, 3.5vw, 8em)'
-    });
-  } else {
-    gsap.to('#hamburger', {
-      opacity: 0,
-      width: '0',
-      height: '0'
-    });
-
-    gsap.to('#hamburger-symbol', {
-      opacity: 0,
-      visibility: 'hidden',
-      fontSize: '0'
-    });
-  }
-}

@@ -6,7 +6,7 @@ import './Sections/Footer/footer';
 import { gsap } from 'gsap';
 import LocomotiveScroll from 'locomotive-scroll';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
-import { Animation } from './animation.ts';
+import { Animation } from './Animation.ts';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 ScrollTrigger.normalizeScroll(true);

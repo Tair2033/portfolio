@@ -210,13 +210,13 @@ export class Animation extends Root {
       {
         opacity: 0,
         delay: 0.35,
-        y: 80
+        y: 70
       },
       {
         delay: 0.35,
         opacity: 1,
         duration: 1,
-        y: 0
+        y: 110
       }
     );
 

@@ -167,15 +167,15 @@ $color-black: #737272;
 
     & .social-group {
       &__icon {
-        animation: 1.5s linear 1s infinite alternate gitIcon;
+        animation: 1.5s linear infinite alternate gitIcon;
       }
 
       &__inner-circle {
-        animation: 1.5s linear 1s infinite alternate gitInner;
+        animation: 1.5s linear infinite alternate gitInner;
       }
 
       &__outline {
-        animation: 1.5s linear 1s infinite alternate gitOutline;
+        animation: 1.5s linear infinite alternate gitOutline;
       }
     }
   }

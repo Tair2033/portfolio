@@ -42,7 +42,7 @@ export class Animation extends Root {
         gsap.to('#hamburger-symbol', {
           opacity: 1,
           visibility: 'visible',
-          fontSize: 'clamp(2.5em, 3.5vw, 8em)'
+          fontSize: 'clamp(2.5em, 2.6vw, 8em)'
         });
       }
     });
@@ -209,12 +209,14 @@ export class Animation extends Root {
       '.big-name',
       {
         opacity: 0,
-        delay: 0.35
+        delay: 0.35,
+        y: 80
       },
       {
         delay: 0.35,
         opacity: 1,
-        duration: 1
+        duration: 1,
+        y: 0
       }
     );
 

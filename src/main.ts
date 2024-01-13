@@ -9,8 +9,9 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { Animation } from './Animation.ts';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-ScrollTrigger.normalizeScroll(true);
+
 new LocomotiveScroll({
+  el: document.querySelector('body') as HTMLElement,
   smooth: true
 });
 

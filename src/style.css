@@ -21,7 +21,7 @@ body {
   font-family: 'Rubik', sans-serif;
   background-color: #1c1d20;
   -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
